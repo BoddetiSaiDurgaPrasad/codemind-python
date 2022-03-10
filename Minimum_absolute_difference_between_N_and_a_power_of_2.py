@@ -1,0 +1,12 @@
+n=int(input())
+k=bin(n)
+k=k[2:]
+c=len(k)
+x1=2**(c)
+x2=2**(c-1)
+z1=abs(n-x1)
+z2=abs(n-x2)
+if(z1>=z2):
+    print(z2)
+else:
+    print(z1)

@@ -1,0 +1,12 @@
+n=int(input())
+if(n<0):
+    k=-1*n
+else:
+    k=n
+k=str(k)
+k=k[::-1]
+k=int(k)
+if(n<0):
+    print(-1*k)
+else:
+    print(k)

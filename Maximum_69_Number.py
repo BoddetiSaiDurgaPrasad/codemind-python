@@ -1,0 +1,25 @@
+n=int(input())
+if(n==9 or n==99 or n==999 or n==9999):
+    print(n)
+else:
+    k=n
+    n=str(n)
+    n=list(n)
+    c=[]
+    a=len(n)
+    x=a-1
+    while(x!=-1):
+        if(n[x]=="9"):
+            n[x]="6"
+            ka="".join(n)
+            ka=int(ka)
+            c.append(ka)
+        else:
+            n[x]="9"
+            ka="".join(n)
+            ka=int(ka)
+            c.append(ka)
+        n=str(k)
+        n=list(n)
+        x=x-1
+    print(max(c))

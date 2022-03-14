@@ -1,0 +1,15 @@
+n=int(input())
+t=n
+s=0
+k=str(n)
+k=len(k)
+while(n!=0):
+    r=n%10
+    s+=r**k
+    n=n//10
+    k=k-1
+#print(s,n)
+if(t==s):
+    print("True")
+else:
+    print("False")

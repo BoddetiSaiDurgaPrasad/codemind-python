@@ -1,0 +1,12 @@
+n=int(input())
+k=str(n)
+k=k[::-1]
+k=int(k)
+k=k**2
+k=str(k)
+k=k[::-1]
+k=int(k)
+if(n**2==k):
+    print("True")
+else:
+    print("False")

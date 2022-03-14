@@ -1,12 +1,12 @@
-n,m=map(int,input().split())
+a,b=map(int,input().split())
 while(True):
-    if(n>m):
-        k=n%m
+    if(a>b):
+        k=a%b
         if(k==0):
-            print(m)
+            print(b)
             break
         else:
-            n=m
-            m=k
+            a=b
+            b=k
     else:
-        n,m=m,n
+        a,b=b,a

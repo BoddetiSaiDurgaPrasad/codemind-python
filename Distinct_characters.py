@@ -1,9 +1,11 @@
 n=input()
 n=n.lower()
-k=[]
-for i in range(len(n)):
-    if(n.count(n[i])==1 and n[i]!=" "):
-        k.append(n[i])
+k=set(n)
+k=list(k)
+k.sort()
+if(k.count(" ")>=1):
+    j=k.index(" ")
+    k.pop(j)
 k.sort()
 k="".join(k)
 print(k)
